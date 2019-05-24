@@ -1,9 +1,7 @@
-// Basic init
-const electron = require('electron')
-const {app, BrowserWindow} = electron
-const path = require('path');
-const url = require('url');
 
+import { app, BrowserWindow } from 'electron';
+import * as path from 'path';
+import * as url from 'url';
 
 // Let electron reloads by itself when webpack watches changes in ./app/
 if (process.env.ELECTRON_START_URL) {

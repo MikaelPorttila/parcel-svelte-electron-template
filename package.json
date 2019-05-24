@@ -6,9 +6,9 @@
   "glob": "latest",
   "scripts": {
     "build": "npm-run-all --parallel build:*",
-    "build:src": "parcel build ./src/index.html -d build/ --public-url ./  --target=node",
+    "build:src": "parcel build ./src/index.html -d build/ --public-url ./",
     "build:tsc": "tsc ./src/main.ts --outDir ./build",
-    "watch": "parcel watch ./src/index.html -d build/ --public-url ./  --target=node",
+    "watch": "parcel watch ./src/index.html -d build/ --public-url ./",
     "prebuild": "npm run clean",
     "start": "npm-run-all build start:electron",
     "start:watch": "npm-run-all clean watch",
