@@ -1,6 +1,6 @@
 # parcel-svelte-electron-template
 
-### install & Run:
+### Install & Run:
 1. npm install
 2. npm start
 
