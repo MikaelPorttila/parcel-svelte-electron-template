@@ -6,7 +6,7 @@
 
 ### Todos:
 - [ ] Fix Parcel Watch issue
-- [ ] Connect Parcel Watch with electron-reload (step 2:, find a HMR solution)
+- [ ] Connect Parcel Watch with electron-reload (step 2: Find HMR solution)
 - [ ] Add Jasmine + Puppeteer for testing 
 
 ### Notes
