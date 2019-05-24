@@ -1,0 +1,39 @@
+{
+  "name": "parcel-svelte-electron-template",
+  "version": "1.0.0",
+  "description": "Small template for an Electron app running Svelte, built with Parcel",
+  "main": "./build/main.js",
+  "glob": "latest",
+  "scripts": {
+    "build": "npm-run-all --parallel build:*",
+    "build:src": "parcel build ./src/index.html -d build/ --public-url ./  --target=node",
+    "build:tsc": "tsc ./src/main.ts --outDir ./build",
+    "watch": "parcel watch ./src/index.html -d build/ --public-url ./  --target=node",
+    "prebuild": "npm run clean",
+    "start": "npm-run-all build start:electron",
+    "start:watch": "npm-run-all clean watch",
+    "start:electron": "electron .",
+    "clean": "rimraf ./build"
+  },
+  "keywords": [
+    "Parcel",
+    "Svelte",
+    "Electron",
+    "Template"
+  ],
+  "author": "Mikael Porttila",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.2",
+    "electron-builder": "^20.40.2",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.12.3",
+    "parcel-plugin-svelte": "^3.0.1",
+    "rimraf": "^2.6.3",
+    "svelte": "^3.4.2",
+    "typescript": "^3.4.5"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ]
+}
